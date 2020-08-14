@@ -302,10 +302,13 @@
     </div>
 
     <!-- Bootstrap & MD Bootstrap JS/jQuery Plugins -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/venobox.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -352,7 +355,10 @@
     <!-- Creates a fade-in effect on page reload via div.preloader -->
     <script>
         $(window).on('load', function () {
-            $('.preloader').delay(400).fadeOut('slow');
+            // $('.preloader').delay(400).fadeOut('slow');
+            setTimeout(() => {
+                $('.preloader').fadeOut('fast');
+            }, 400);
         });
     </script>
 </body>
