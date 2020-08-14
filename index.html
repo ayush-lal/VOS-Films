@@ -351,9 +351,9 @@
 
     <!-- Creates a fade-in effect on page reload via div.preloader -->
     <script>
-        $(window).load(function () {
+        $(window).on('load', function () {
             $('.preloader').delay(400).fadeOut('slow');
-        })
+        });
     </script>
 </body>
 
